@@ -3,41 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products | ACRB Smart Phones</title>
+    <title>Products | AR Smart Phones</title>
 
     <link rel="stylesheet" href="css/products.css">
 </head>
 <body>
 
 <header>
-    <h1>📱 ACRB Smart Phones</h1>
+
+    <div class="logo">
+        <h1>Smart Phones</h1>
+    </div>
+
+    <div class="search">
+        <input type="text" placeholder="Search Smartphones...">
+        <button>🔍</button>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="cart.html">Cart</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </nav>
+
 </header>
 
-<!-- Products Section -->
+<section class="categories">
+
+    <button>Apple</button>
+    <button>Samsung</button>
+    <button>Vivo</button>
+    <button>Oppo</button>
+    <button>Realme</button>
+    <button>OnePlus</button>
+    <button>Xiaomi</button>
+    <button>Nothing</button>
+    <button>Motorola</button>
+    <button>Google Pixel</button>
+
+</section>
+
 <section class="products">
 
     <div class="card">
-        <img src="images/iphone16.jpg" alt="">
-        <h3>iPhone 16</h3>
-        <p>₹79,999</p>
-        <button onclick="addToCart('iPhone 16', 79999)">Add to Cart</button>
+        <img src="images/iphone16.jpg" alt="iPhone 16">
+        <h3>Apple iPhone 16</h3>
+        <p>⭐⭐⭐⭐⭐ (4.8)</p>
+        <p><del>₹84,999</del></p>
+        <p class="price">₹79,999</p>
+        <p class="stock">✅ In Stock</p>
+        <button onclick="addToWishlist('Apple iPhone 16')">❤️ Wishlist</button>
+        <button onclick="addToCart('Apple iPhone 16',79999)">🛒 Add to Cart</button>
+        <button onclick="buyNow()">⚡ Buy Now</button>
     </div>
 
     <div class="card">
-        <img src="images/s24.jpg" alt="">
-        <h3>Samsung S24</h3>
-        <p>₹64,999</p>
-        <button onclick="addToCart('Samsung S24', 64999)">Add to Cart</button>
+        <img src="images/s24.jpg" alt="Samsung S24">
+        <h3>Samsung Galaxy S24</h3>
+        <p>⭐⭐⭐⭐⭐ (4.7)</p>
+        <p><del>₹69,999</del></p>
+        <p class="price">₹64,999</p>
+        <p class="stock">✅ In Stock</p>
+        <button onclick="addToWishlist('Samsung Galaxy S24')">❤️ Wishlist</button>
+        <button onclick="addToCart('Samsung Galaxy S24',64999)">🛒 Add to Cart</button>
+        <button onclick="buyNow()">⚡ Buy Now</button>
     </div>
 
     <div class="card">
-        <img src="images/realme.jpg" alt="">
+        <img src="images/realme.jpg" alt="Realme GT">
         <h3>Realme GT</h3>
-        <p>₹29,999</p>
-        <button onclick="addToCart('Realme GT', 29999)">Add to Cart</button>
+        <p>⭐⭐⭐⭐⭐ (4.6)</p>
+        <p><del>₹34,999</del></p>
+        <p class="price">₹29,999</p>
+        <p class="stock">✅ In Stock</p>
+        <button onclick="addToWishlist('Realme GT')">❤️ Wishlist</button>
+        <button onclick="addToCart('Realme GT',29999)">🛒 Add to Cart</button>
+        <button onclick="buyNow()">⚡ Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="images/oneplus13.jpg" alt="OnePlus 13">
+        <h3>OnePlus 13</h3>
+        <p>⭐⭐⭐⭐⭐ (4.9)</p>
+        <p><del>₹74,999</del></p>
+        <p class="price">₹69,999</p>
+        <p class="stock">✅ In Stock</p>
+        <button onclick="addToWishlist('OnePlus 13')">❤️ Wishlist</button>
+        <button onclick="addToCart('OnePlus 13',69999)">🛒 Add to Cart</button>
+        <button onclick="buyNow()">⚡ Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="images/vivox200.jpg" alt="Vivo X200">
+        <h3>Vivo X200</h3>
+        <p>⭐⭐⭐⭐⭐ (4.8)</p>
+        <p><del>₹59,999</del></p>
+        <p class="price">₹54,999</p>
+        <p class="stock">✅ In Stock</p>
+        <button onclick="addToWishlist('Vivo X200')">❤️ Wishlist</button>
+        <button onclick="addToCart('Vivo X200',54999)">🛒 Add to Cart</button>
+        <button onclick="buyNow()">⚡ Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="images/opporeno14.jpg" alt="Oppo Reno 14">
+        <h3>Oppo Reno 14</h3>
+        <p>⭐⭐⭐⭐☆ (4.5)</p>
+        <p><del>₹44,999</del></p>
+        <p class="price">₹39,999</p>
+        <p class="stock">✅ In Stock</p>
+        <button onclick="addToWishlist('Oppo Reno 14')">❤️ Wishlist</button>
+        <button onclick="addToCart('Oppo Reno 14',39999)">🛒 Add to Cart</button>
+        <button onclick="buyNow()">⚡ Buy Now</button>
     </div>
 
 </section>
+
+<footer>
+
+    <h3>AR Smart Phones</h3>
+
+    <p>Best Online Smartphone Shopping Website</p>
+
+    <p>📞 +91 9876543210</p>
+
+    <p>📧 support@arsmartphones.com</p>
+
+    <p>© 2026 AR Smart Phones. All Rights Reserved.</p>
+
+</footer>
 
 <script src="js/products.js"></script>
 
