@@ -21,10 +21,26 @@ header{
     flex-wrap:wrap;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+ 
+}
+    
 .logo h1{
     font-size:28px;
 }
 
+.logo img{
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+    border: 3px solid #ff9800;
+
+}
+    
 nav{
     display:flex;
     gap:20px;

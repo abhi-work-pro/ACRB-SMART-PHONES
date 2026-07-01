@@ -19,6 +19,20 @@ header{
     margin-bottom:20px;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+}    
+.logo img{
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+    border: 3px solid #ff9800;
+
+}
 .signup-container{
     width:100%;
     display:flex;

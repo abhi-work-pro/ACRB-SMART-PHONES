@@ -24,10 +24,25 @@ header{
     z-index:1000;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+}    
+
 .logo h1{
     font-size:28px;
+
 }
 
+.logo img{
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+    border: 3px solid #ff9800;
+}    
 .search{
     display:flex;
     gap:10px;

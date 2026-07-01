@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wishlist | ACRB Smart Phones</title>
+    <title>Cart | AR Smart Phones</title>
 
-    <link rel="stylesheet" href="css/wishlist.css">
+    <link rel="stylesheet" href="css/cart.css">
 </head>
 <body>
 
@@ -26,13 +26,21 @@
 
 </header>
 
-<section class="wishlist">
+<section class="cart">
 
-    <h2>❤️ My Wishlist</h2>
+    <h2>🛒 My Shopping Cart</h2>
 
-    <div id="wishlistItems">
+    <div id="cartItems">
 
-        <p></p>
+        <p>Your Cart is Empty.</p>
+
+    </div>
+
+    <div class="cart-total">
+
+        <h3>Total: ₹<span id="totalPrice">0</span></h3>
+
+        <button onclick="checkout()">💳 Proceed to Checkout</button>
 
     </div>
 
@@ -44,7 +52,7 @@
 
 </footer>
 
-<script src="js/wishlist.js"></script>
+<script src="js/cart.js"></script>
 
 </body>
 </html>
