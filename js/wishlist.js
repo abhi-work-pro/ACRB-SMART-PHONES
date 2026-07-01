@@ -1,21 +1,23 @@
-// ===============================
-// ACRB Smart Phones - Wishlist JS
-// ===============================
-
-// Wishlist Local Storage
-let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+// ==========================
+// ACRB Smart Phones Wishlist
+// ==========================
 
 const wishlistContainer = document.getElementById("wishlistItems");
 
-// Wishlist दिखाना
+// LocalStorage से Wishlist लाओ
+let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+// Wishlist दिखाओ
 function loadWishlist() {
+
+    if (!wishlistContainer) return;
+
+    wishlistContainer.innerHTML = "";
 
     if (wishlist.length === 0) {
         wishlistContainer.innerHTML = "<p>Your Wishlist is Empty ❤️</p>";
         return;
     }
-
-    wishlistContainer.innerHTML = "";
 
     wishlist.forEach((item, index) => {
 
@@ -34,34 +36,33 @@ function loadWishlist() {
         ;
 
     });
-
 }
 
-// Wishlist से हटाना
+// Wishlist से हटाओ
 function removeWishlist(index){
 
     wishlist.splice(index,1);
 
-    localStorage.setItem("wishlist",JSON.stringify(wishlist));
+    localStorage.setItem("wishlist", JSON.stringify(wishlist));
 
     loadWishlist();
 
 }
 
-// Cart में भेजना
+// Cart में भेजो
 function moveToCart(name){
 
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     cart.push({
-        name:name,
-        quantity:1
+        name: name,
+        quantity: 1
     });
 
-    localStorage.setItem("cart",JSON.stringify(cart));
+    localStorage.setItem("cart", JSON.stringify(cart));
 
     alert(name + " Added to Cart 🛒");
-
 }
 
-loadWishlist();
+// Page खुलते ही Wishlist दिखाओ
+window.onload = loadWishlist;

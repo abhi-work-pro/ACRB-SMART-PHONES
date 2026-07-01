@@ -94,5 +94,35 @@ nav{
 .logo h1{
     font-size:22px;
 }
+.wish-card{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:20px;
+    margin:20px 0;
+    text-align:center;
+}
+
+.wish-card h3{
+    margin-bottom:15px;
+}
+
+.wish-card button{
+    padding:10px 15px;
+    margin:5px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.wish-card button:first-of-type{
+    background:#0d6efd;
+    color:#fff;
+}
+
+.wish-card button:last-of-type{
+    background:#dc3545;
+    color:#fff;
+}
 
 }
